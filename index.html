@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BanglaCAT | Dashboard</title>
+    <link rel="shortcut icon" href="assets/images/brand.svg" type="image/x-icon">
+    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- CUSTOM STYLE -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <a href="index.html" class="brand">
+                    <img src="assets/images/brand.svg" alt="">
+                </a>
+
+                <ul class="nav align-items-center">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-bell"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a href="#" class="dropdown-item">
+                                    NOTIFICATION 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">
+                                    NOTIFICATION 2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">
+                                    NOTIFICATION 3
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">
+                                    NOTIFICATION 4
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">
+                                    NOTIFICATION 5
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <a class="nav-link d-flex align-items-center" href="#">
+                            Profile Name
+                            <img src="assets/images/user1.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-item logout">
+                        <a href="login.html" class="nav-link">
+                            <i class="icon-iconlogout"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item d-md-none d-block">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-align-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 d-none d-md-block">
+                    <aside class="sidebar">
+                        <div class="sidebar-img">
+                            <img src="assets/images/user1.svg" alt="">
+                            <a href="#" class="edit-btn">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                        </div>
+
+                        <h6 class="sidebar-title">Profile Name</h6>
+
+                        <ul class="top-nav">
+                            <li>Current location - City, Country</li>
+                            <li>Current Designation</li>
+                            <li>Current Information
+                                <ul class="nav">
+                                    <li>
+                                        <a href="mailto:sample@example.com">
+                                            sample@example.com
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:+8801234567890">
+                                            +88 01234 567890
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Professional Experience</li>
+                            <li>Education</li>
+                        </ul>
+
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="profile.html" class="nav-link">
+                                    <i class="fas fa-edit"></i> Edit Profile
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <!-- <img src="assets/images/get.svg" width="20" alt=""> Get in Touch -->
+
+                                    <i class="icon-iconcomment"></i> Get in Touch
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="career.html" class="nav-link">
+                                    <i class="fab fa-cloudsmith"></i> Career Development
+                                    & Tips
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="icon-iconzoom"></i> Opportunities
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="settings.html" class="nav-link">
+                                    <i class="icon-iconsettings"></i> Settings
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="login.html" class="nav-link">
+                                    <i class="icon-iconlogout"></i> Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="content-middle">
+                        <form class="post-form">
+                            <div class="form-group">
+                                <textarea rows="6" class="form-control" placeholder="Write Something..."></textarea>
+                            </div>
+
+                            <div class="form-group d-flex justify-content-between">
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <button type="button">
+                                            <i class="fas fa-paperclip"></i>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button type="button">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button type="button">
+                                            <i class="fas fa-camera"></i>
+                                        </button>
+                                    </li>
+                                </ul>
+
+                                <button type="submit" class="post-btn">Post</button>
+                            </div>
+                        </form>
+
+                        <div class="posts">
+                            <div class="card">
+                                <div
+                                    class="card-header border-0 bg-transparent d-flex align-items-center justify-content-between">
+                                    <div class="media d-flex align-items-center">
+                                        <img src="assets/images/user2.svg" class="mr-3" alt="...">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 media-title">Sample Name</h5>
+                                            <p class="media-text">Designation</p>
+                                        </div>
+                                    </div>
+
+                                    <small>15 mins ago</small>
+                                </div>
+
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas, tortor
+                                        vitae molestie finibus, mi metus semper nibh, in vehicula ante purus in diam.
+                                        Vestibulum pharetra et turpis nec volutpat. Nullam pharetra rhoncus tellus, a
+                                        pretium justo commodo non. Maecenas at fermentum tortor. Nullam diam sem,
+                                        pretium non eleifend et, suscipit eget urna. Maecenas venenatis arcu a pretium
+                                        vestibulum. Ut mauris erat, volutpat a blandit non, sagittis ut tellus. Nulla
+                                        facilisi. Etiam consequat
+                                    </p>
+
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <ul class="nav">
+                                            <li class="nav-item">
+                                                <button type="button">
+                                                    <i class="icon-iconlike"></i>
+                                                </button>
+                                                <span>21</span>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button type="button">
+                                                    <i class="icon-iconcomment"></i>
+                                                </button>
+                                                <span>06</span>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button type="button">
+                                                    <i class="icon-iconshare"></i>
+                                                </button>
+                                                <span>02</span>
+                                            </li>
+                                        </ul>
+
+                                        <button class="comment-btn" type="button">
+                                            Add Comment
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer bg-transparent borde-0">
+                                    <div class="comment-box">
+                                        <input type="text" class="form-control" placeholder="Write a comment...">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div
+                                    class="card-header border-0 bg-transparent d-flex align-items-center justify-content-between">
+                                    <div class="media d-flex align-items-center">
+                                        <img src="assets/images/user1.svg" class="mr-3" alt="...">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 media-title">Sample Name</h5>
+                                            <p class="media-text">Designation</p>
+                                        </div>
+                                    </div>
+
+                                    <small>15 mins ago</small>
+                                </div>
+
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas, tortor
+                                        vitae molestie finibus, mi metus semper nibh, in vehicula ante purus in diam.
+                                        Vestibulum
+                                    </p>
+
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <ul class="nav">
+                                            <li class="nav-item">
+                                                <button type="button">
+                                                    <i class="icon-iconlike"></i>
+                                                </button>
+                                                <span>21</span>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button type="button">
+                                                    <i class="icon-iconcomment"></i>
+                                                </button>
+                                                <span>06</span>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button type="button">
+                                                    <i class="icon-iconshare"></i>
+                                                </button>
+                                                <span>02</span>
+                                            </li>
+                                        </ul>
+
+                                        <button class="comment-btn" type="button">
+                                            Add Comment
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer bg-transparent borde-0">
+                                    <div class="comment-box">
+                                        <input type="text" class="form-control" placeholder="Write a comment...">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div
+                                    class="card-header border-0 bg-transparent d-flex align-items-center justify-content-between">
+                                    <div class="media d-flex align-items-center">
+                                        <img src="assets/images/user1.svg" class="mr-3" alt="...">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 media-title">Sample Name</h5>
+                                            <p class="media-text">Designation</p>
+                                        </div>
+                                    </div>
+
+                                    <small>15 mins ago</small>
+                                </div>
+
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas, tortor
+                                        vitae molestie finibus, mi metus semper nibh, in vehicula ante purus in diam.
+                                        Vestibulum
+                                    </p>
+
+                                    <div class="card-img">
+                                        <img src="assets/images/cover.svg" class="img-fluid w-100" alt="">
+                                    </div>
+
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <ul class="nav">
+                                            <li class="nav-item">
+                                                <button type="button">
+                                                    <i class="icon-iconlike"></i>
+                                                </button>
+                                                <span>21</span>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button type="button">
+                                                    <i class="icon-iconcomment"></i>
+                                                </button>
+                                                <span>06</span>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button type="button">
+                                                    <i class="icon-iconshare"></i>
+                                                </button>
+                                                <span>02</span>
+                                            </li>
+                                        </ul>
+
+                                        <button class="comment-btn" type="button">
+                                            Add Comment
+                                        </button>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="card-footer bg-transparent borde-0">
+                                    <div class="comment-box">
+                                        <input type="text" class="form-control" placeholder="Write a comment...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="right-content">
+                        <div class="right-top">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="card-title">Words from the Management</h6>
+
+                                    <div class="media d-flex">
+                                        <div class="d-flex flex-column">
+                                            <img src="assets/images/user1.svg" width="50" alt="...">
+                                            <h5 class="mt-0 media-title">Sample Name</h5>
+                                            <p class="text">Designation</p>
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="media-text">
+                                                (This section will bear info about BanglaCAT alumni, message from
+                                                the
+                                                MD, CEO, CPO / Head of HR and message from selected alumnus) Lorem
+                                                ipsum
+                                                dolor sit amet, consectetur adipiscing elit. Nulla vestibulum sed
+                                                nisl
+                                                vitae gravida. Praesent maximus felis nec mollis luctus. Praesent id
+                                                egestas lacus. Donec condimentum aliquet maximus. Nulla facilisi.
+                                                Vestibulum vel felis et dolor convallis maximus vitae a lorem.
+                                            </p>
+
+                                            <div class="d-flex align-items-end justify-content-end">
+                                                <a href="#" class="read-more">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right-bottom">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="assets/images/sidecover.svg" alt="" class="card-img-top">
+                                </div>
+
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        (All content presenting information like BanglaCAT Alumni news / events,
+                                        BanglaCAT news / events and CAT news)
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas,
+                                        tortor vitae molestie finibus, mi metus semper nibh, in vehicula ante purus
+                                        in diam. Vestibulum pharetra et turpis nec
+                                    </p>
+
+                                    <div class="d-flex justify-content-end">
+                                        <a href="#" class="read-more text-right">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="assets/images/cover.svg" alt="" class="card-img-top">
+                                </div>
+
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        (All content presenting information like BanglaCAT Alumni news / events,
+                                        BanglaCAT news / events and CAT news)
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas,
+                                        tortor vitae molestie finibus, mi metus semper nibh, in vehicula ante purus
+                                        in diam. Vestibulum pharetra et turpis nec
+                                    </p>
+
+                                    <div class="d-flex justify-content-end">
+                                        <a href="#" class="read-more text-right">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="left-side">
+                        <img src="assets/images/banglatruck.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="right-side">
+                        <p class="right-side-text mt-2 mb-0">
+                            &copy; <span id="year">2020</span> - BanglaCAT _ All rights reserved. Developed by Bangla
+                            Trac
+                            Group Brand
+                            Management.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
