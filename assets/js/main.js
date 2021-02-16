@@ -1,3 +1,28 @@
+/** MOBILE MENU SHOW HIDE */
+const menuIcon = document.querySelector('.menu-icon');
+const mobileMenu = document.querySelector('.mobile-menu');
+const closeIcon = document.querySelector('.close-icon');
+
+menuIcon.addEventListener('click', showMobileMenu);
+closeIcon.addEventListener('click', hideMobileMenu);
+
+// SHOW MOBILE MENU
+function showMobileMenu() {
+    mobileMenu.classList.add('show');
+}
+
+// HIDE MOBILE MENU
+function hideMobileMenu() {
+    mobileMenu.classList.remove('show');
+}
+
+// HIDE m-menu on outside click
+window.addEventListener('click', e => {
+    e.target == mobileMenu ? mobileMenu.classList.remove('show') : false;
+});
+
+
+/** COMMENT BOX SHOWN */
 const commentBtn = document.querySelectorAll('.comment-btn');
 
 for (let a = 0; a < commentBtn.length; a++) {
@@ -55,7 +80,7 @@ dropArea.addEventListener("drop", (event) => {
 
 function showFile() {
     let fileType = file.type; //getting selected file type
-    let validExtensions = ["image/jpeg", "image/jpg", "image/png"]; //adding some valid image extensions in array
+    let validExtensions = ["image/jpeg", "image/jpg", "image/png", "image/svg"]; //adding some valid image extensions in array
     if (validExtensions.includes(fileType)) { //if user selected file is an image file
         let fileReader = new FileReader(); //creating new FileReader object
         fileReader.onload = () => {

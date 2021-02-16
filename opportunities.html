@@ -18,7 +18,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between responsive-menu">
                 <a href="index.html" class="brand">
                     <img src="assets/images/brand.svg" alt="">
                 </a>
@@ -62,7 +62,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item d-none d-md-block">
+                    <li class="nav-item d-none d-lg-block">
                         <a class="nav-link d-flex align-items-center" href="#">
                             Profile Name
                             <img src="assets/images/user1.svg" alt="">
@@ -73,8 +73,8 @@
                             <i class="icon-iconlogout"></i>
                         </a>
                     </li>
-                    <li class="nav-item d-md-none d-block">
-                        <a href="#" class="nav-link">
+                    <li class="nav-item d-lg-none d-block menu-icon">
+                        <a href="javascript:void(0)" class="nav-link">
                             <i class="fas fa-align-right"></i>
                         </a>
                     </li>
@@ -86,7 +86,7 @@
     <main class="main-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 d-none d-md-block">
+                <div class="col-lg-3 d-none d-lg-block">
                     <aside class="sidebar">
                         <div class="sidebar-img">
                             <img src="assets/images/user1.svg" alt="">
@@ -156,7 +156,81 @@
                     </aside>
                 </div>
 
-                <div class="col-md-5">
+                <div class="mobile-menu d-lg-none">
+                    <aside class="sidebar">
+                        <div class="sidebar-img">
+                            <img src="assets/images/user1.svg" alt="">
+                            <a href="#" class="edit-btn">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                        </div>
+
+                        <button class="close-icon">
+                            <i class="fas fa-times"></i>
+                        </button>
+
+                        <h6 class="sidebar-title">Profile Name</h6>
+
+                        <ul class="top-nav">
+                            <li>Current location - City, Country</li>
+                            <li>Current Designation</li>
+                            <li>Current Information
+                                <ul class="nav">
+                                    <li>
+                                        <a href="mailto:sample@example.com">
+                                            sample@example.com
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:+8801234567890">
+                                            +88 01234 567890
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Professional Experience</li>
+                            <li>Education</li>
+                        </ul>
+
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="profile.html" class="nav-link">
+                                    <i class="fas fa-edit"></i> Edit Profile
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <!-- <img src="assets/images/get.svg" width="20" alt=""> Get in Touch -->
+
+                                    <i class="icon-iconcomment"></i> Get in Touch
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="career.html" class="nav-link">
+                                    <i class="fab fa-cloudsmith"></i> Career Development
+                                    & Tips
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="opportunities.html" class="nav-link">
+                                    <i class="icon-iconzoom"></i> Opportunities
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="settings.html" class="nav-link">
+                                    <i class="icon-iconsettings"></i> Settings
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="login.html" class="nav-link">
+                                    <i class="icon-iconlogout"></i> Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+
+                <div class="col-lg-5 col-md-7">
                     <div class="content-middle">
                         <form class="post-form">
                             <div class="form-group">
@@ -450,7 +524,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-5">
                     <div class="right-content">
                         <div class="right-top">
                             <div class="card">
@@ -577,6 +651,7 @@
     </footer>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,331 @@
+@media(max-width: 768px) {
+    .header {
+        .responsive-menu {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .brand {
+                margin: .5rem 0 .5rem;
+                display: block;
+            }
+
+            .nav {
+                .nav-item {
+                    .nav-link {
+                        i {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+                .dropdown {
+                    .dropdown-menu {
+                        margin-top: 5px !important;
+
+                        .dropdown-item {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .alumni-icon {
+            width: 1.75rem;
+            height: 1.75rem;
+            margin-left: 1rem;
+        }
+
+        span {
+            font-size: 12px;
+        }
+    }
+
+    .main-section {
+        .content-middle {
+            .profile-form {
+                min-height: 100%;
+            }
+
+            .posts {
+                .card {
+                    .card-body {
+                        .card-text {
+                            font-size: 12px;
+                        }
+
+                        .comment-btn {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+
+            .multi {
+                .card {
+                    .card-header {
+                        .media {
+                            .media-body {
+                                .media-title {
+                                    font-size: 13px;
+                                }
+
+                                .body-content {
+                                    .body-text {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .card {
+                .card-header {
+                    small {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .profile-form {
+                .drag-area {
+
+                    header,
+                    button {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .right-content {
+            .right-top {
+                .card {
+                    .card-body {
+                        .media {
+                            .media-body {
+                                .media-text {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right-bottom {
+                .card {
+                    .card-body {
+                        .card-text {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .form-group {
+            label {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .main {
+        min-height: 160vh;
+
+        .login-details {
+            .alumni-img {
+                width: 70px;
+                height: 70px;
+            }
+
+            .alumni-title {
+                font-size: 1.75rem;
+            }
+        }
+
+        .forgot-details {
+            .forgot-title {
+                font-size: 1.75rem;
+            }
+
+            .forgot-text {
+                font-size: 12px;
+            }
+        }
+
+        .alumni-img {
+            img {
+                width: 70px;
+                height: 70px;
+                margin: 2rem auto 0;
+            }
+        }
+
+        .register-form {
+            .register-title {
+                font-size: 1.75rem;
+            }
+
+            .register-text {
+                font-size: 12px !important;
+                color: $white;
+
+                a {
+                    text-decoration: none;
+                    font-size: 12px !important;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .lead {
+                font-size: 12px !important;
+                color: $white;
+            }
+
+            .form-group {
+                font-size: 12px;
+
+                .form-control {
+                    &::placeholder {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .form-check-label {
+                font-size: 12px;
+            }
+        }
+
+        .welcome {
+            .welcome-title {
+                font-size: 1.75rem;
+            }
+
+            .welcome-text {
+                font-size: 12px;
+
+                .success {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .welcome-main {
+        height: 100vh;
+        max-height: 100vh !important;
+    }
+
+    .post-btn,
+    .change-btn {
+        font-size: 12px;
+    }
+
+    .media-text,
+    p,
+    .card-text,
+    .comment-btn {
+        font-size: 12px;
+    }
+
+
+}
+
+.mobile-menu {
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+
+    .sidebar {
+        width: 300px;
+        height: 100%;
+        margin-left: -13px;
+        overflow-y: scroll;
+        position: relative;
+
+        .top-nav {
+            margin-bottom: 1rem;
+
+            li {
+                font-size: 14px;
+
+                &:first-child {
+                    list-style: none;
+                    margin-left: -1.2rem;
+                }
+
+                .nav {
+                    flex-direction: column;
+                    text-align: left;
+                    margin-left: 3rem;
+
+                    li {
+                        a {
+                            font-size: .8rem;
+                            display: block;
+                            text-decoration: none;
+                            margin-bottom: .25rem;
+                            color: $black;
+                            transform: all .4s ease-in-out;
+
+                            &:hover {
+                                color: $primary-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .nav {
+            .nav-item {
+                .nav-link {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .close-icon {
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 1.25rem;
+
+            i {
+                transition: all .5s ease-in-out;
+            }
+
+            &:hover {
+                i {
+                    transform: rotate(360deg);
+                    color: rgb(207, 21, 21);
+                }
+            }
+        }
+    }
+}
+
+.mobile-menu.show {
+    left: 0;
+}
