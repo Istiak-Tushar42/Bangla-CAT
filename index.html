@@ -28,7 +28,7 @@
                 <ul class="nav align-items-center">
                     <li class="nav-item">
                         <a href="index.html" class="nav-link">
-                            <i class="fas fa-home"></i>
+                            <i class="fas fa-home-alt"></i>
                         </a>
                     </li>
                     <li class="nav-item dropdown">
@@ -70,9 +70,9 @@
                             <img src="assets/images/user1.svg" class="ml-3" alt="">
                         </a>
                     </li>
-                    <li class="nav-item logout">
+                    <li class="nav-item log">
                         <a href="login.html" class="nav-link">
-                            <i class="icon-iconlogout"></i>
+                            <span class="icon-log"></span>
                         </a>
                     </li>
                     <li class="nav-item d-lg-none d-block menu-icon">
@@ -90,152 +90,174 @@
     <main class="main-section">
         <div class="container">
             <div class="row">
+                <!-- LEFT SECTION START -->
                 <div class="col-lg-3 d-none d-lg-block">
                     <aside class="sidebar">
-                        <div class="sidebar-img">
-                            <img src="assets/images/user1.svg" alt="">
-                            <a href="#" class="edit-btn">
-                                <i class="fas fa-edit"></i>
-                            </a>
+                        <!-- PERSONAL INFO -->
+                        <div>
+                            <div class="sidebar-img">
+                                <img src="assets/images/user1.svg" alt="">
+                                <a href="#" class="edit-btn">
+                                    <span class="fas fa-edit"></span>
+                                </a>
+                            </div>
+
+                            <h6 class="sidebar-title">Profile Name</h6>
+
+                            <!-- PERSONAL INFO MENU -->
+                            <ul class="top-nav">
+                                <li>Current location - City, Country</li>
+                                <li>Current Designation</li>
+                                <li>Current Information
+                                    <ul class="nav">
+                                        <li>
+                                            <a href="mailto:sample@example.com">
+                                                sample@example.com
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="tel:+8801234567890">
+                                                +88 01234 567890
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Professional Experience</li>
+                                <li>Education</li>
+                            </ul>
+                            <!-- PERSONAL INFO MENU -->
                         </div>
+                        <!-- PERSONAL INFO -->
 
-                        <h6 class="sidebar-title">Profile Name</h6>
-
-                        <ul class="top-nav">
-                            <li>Current location - City, Country</li>
-                            <li>Current Designation</li>
-                            <li>Current Information
-                                <ul class="nav">
-                                    <li>
-                                        <a href="mailto:sample@example.com">
-                                            sample@example.com
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="tel:+8801234567890">
-                                            +88 01234 567890
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>Professional Experience</li>
-                            <li>Education</li>
-                        </ul>
-
+                        <!-- SIDEBAR NAV -->
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a href="profile.html" class="nav-link">
-                                    <i class="fas fa-edit"></i> Edit Profile
+                                <a href="profile.html" class="nav-link d-flex align-items-center">
+                                    <span class="icon-edit"></span>
+                                    <span class="nav-text">Edit Profile</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <!-- <img src="assets/images/get.svg" width="20" alt=""> Get in Touch -->
-
-                                    <i class="icon-iconcomment"></i> Get in Touch
+                                <a href="#" class="nav-link d-flex align-items-center">
+                                    <span class="icon-com"></span>
+                                    <span class="nav-text">Get in Touch</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="career.html" class="nav-link">
-                                    <i class="fab fa-cloudsmith"></i> Career Development
-                                    & Tips
+                                <a href="career.html" class="nav-link d-flex align-items-center">
+                                    <span class="icon-share"></span>
+                                    <span class="nav-text">Career Development & Tips</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="opportunities.html" class="nav-link">
-                                    <i class="icon-iconzoom"></i> Opportunities
+                                <a href="opportunities.html" class="nav-link d-flex align-items-center">
+                                    <span class="icon-zoomin"></span>
+                                    <span class="nav-text">Opportunities</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="settings.html" class="nav-link">
-                                    <i class="icon-iconsettings"></i> Settings
+                                <a href="settings.html" class="nav-link d-flex align-items-center">
+                                    <span class="icon-settings"></span>
+                                    <span class="nav-text">Settings</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="login.html" class="nav-link">
-                                    <i class="icon-iconlogout"></i> Logout
+                                <a href="login.html" class="nav-link d-flex align-items-center">
+                                    <span class="icon-logout"></span>
+                                    <span class="nav-text">Logout</span>
                                 </a>
                             </li>
                         </ul>
+                        <!-- SIDEBAR NAV -->
                     </aside>
                 </div>
+                <!-- LEFT SECTION END -->
 
+                <!-- MOBILE MENU START -->
                 <div class="mobile-menu d-lg-none">
                     <aside class="sidebar">
-                        <div class="sidebar-img">
-                            <img src="assets/images/user1.svg" alt="">
-                            <a href="#" class="edit-btn">
-                                <i class="fas fa-edit"></i>
-                            </a>
+                        <div>
+                            <div class="sidebar-img">
+                                <img src="assets/images/user1.svg" alt="">
+                                <a href="#" class="edit-btn">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                            </div>
+
+                            <button class="close-icon">
+                                <i class="fas fa-times"></i>
+                            </button>
+
+                            <h6 class="sidebar-title">Profile Name</h6>
+
+                            <ul class="top-nav">
+                                <li>Current location - City, Country</li>
+                                <li>Current Designation</li>
+                                <li>Current Information
+                                    <ul class="nav">
+                                        <li>
+                                            <a href="mailto:sample@example.com">
+                                                sample@example.com
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="tel:+8801234567890">
+                                                +88 01234 567890
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Professional Experience</li>
+                                <li>Education</li>
+                            </ul>
                         </div>
-
-                        <button class="close-icon">
-                            <i class="fas fa-times"></i>
-                        </button>
-
-                        <h6 class="sidebar-title">Profile Name</h6>
-
-                        <ul class="top-nav">
-                            <li>Current location - City, Country</li>
-                            <li>Current Designation</li>
-                            <li>Current Information
-                                <ul class="nav">
-                                    <li>
-                                        <a href="mailto:sample@example.com">
-                                            sample@example.com
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="tel:+8801234567890">
-                                            +88 01234 567890
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>Professional Experience</li>
-                            <li>Education</li>
-                        </ul>
 
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a href="profile.html" class="nav-link">
-                                    <i class="fas fa-edit"></i> Edit Profile
+                                <a href="profile.html" class="nav-link d-flex align-items-center">
+                                    <span class="icon-edit"></span>
+                                    <span class="nav-text">Edit Profile</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <!-- <img src="assets/images/get.svg" width="20" alt=""> Get in Touch -->
-
-                                    <i class="icon-iconcomment"></i> Get in Touch
+                                <a href="#" class="nav-link d-flex align-items-center">
+                                    <span class="icon-com"></span>
+                                    <span class="nav-text">Get in Touch</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="career.html" class="nav-link">
-                                    <i class="fab fa-cloudsmith"></i> Career Development
-                                    & Tips
+                                <a href="career.html" class="nav-link d-flex align-items-center">
+                                    <span class="icon-share"></span>
+                                    <div class="nav-text">Career Development & Tips</div>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="opportunities.html" class="nav-link">
-                                    <i class="icon-iconzoom"></i> Opportunities
+                                <a href="opportunities.html" class="nav-link d-flex align-items-center">
+                                    <span class="icon-zoomin"></span>
+                                    <span class="nav-text">Opportunities</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="settings.html" class="nav-link">
-                                    <i class="icon-iconsettings"></i> Settings
+                                <a href="settings.html" class="nav-link d-flex align-items-center">
+                                    <span class="icon-settings"></span>
+                                    <span class="nav-text">Settings</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="login.html" class="nav-link">
-                                    <i class="icon-iconlogout"></i> Logout
+                                <a href="login.html" class="nav-link d-flex align-items-center">
+                                    <span class="icon-logout"></span>
+                                    <span class="nav-text">Logout</span>
                                 </a>
                             </li>
                         </ul>
                     </aside>
                 </div>
+                <!-- MOBILE MENU END -->
 
-                <div class="col-lg-5 col-md-7">
+                <!-- MIDDLE CONTENT START -->
+                <div class="col-lg-6 col-md-6">
                     <div class="content-middle">
+                        <!-- POST FORM START -->
                         <form class="post-form">
                             <div class="form-group">
                                 <textarea rows="6" class="form-control" placeholder="Write Something..."></textarea>
@@ -263,7 +285,9 @@
                                 <button type="submit" class="post-btn">Post</button>
                             </div>
                         </form>
+                        <!-- POST FORM END -->
 
+                        <!-- POSTS SECTION START -->
                         <div class="posts">
                             <div class="card">
                                 <div
@@ -294,19 +318,19 @@
                                         <ul class="nav">
                                             <li class="nav-item">
                                                 <button type="button">
-                                                    <i class="icon-iconlike"></i>
+                                                    <span class="icon-like"></span>
                                                 </button>
                                                 <span>21</span>
                                             </li>
                                             <li class="nav-item">
                                                 <button type="button">
-                                                    <i class="icon-iconcomment"></i>
+                                                    <span class="icon-comment"></span>
                                                 </button>
                                                 <span>06</span>
                                             </li>
                                             <li class="nav-item">
                                                 <button type="button">
-                                                    <i class="icon-iconshare"></i>
+                                                    <span class="icon-share"></span>
                                                 </button>
                                                 <span>02</span>
                                             </li>
@@ -350,19 +374,19 @@
                                         <ul class="nav">
                                             <li class="nav-item">
                                                 <button type="button">
-                                                    <i class="icon-iconlike"></i>
+                                                    <span class="icon-like"></span>
                                                 </button>
                                                 <span>21</span>
                                             </li>
                                             <li class="nav-item">
                                                 <button type="button">
-                                                    <i class="icon-iconcomment"></i>
+                                                    <span class="icon-comment"></span>
                                                 </button>
                                                 <span>06</span>
                                             </li>
                                             <li class="nav-item">
                                                 <button type="button">
-                                                    <i class="icon-iconshare"></i>
+                                                    <span class="icon-share"></span>
                                                 </button>
                                                 <span>02</span>
                                             </li>
@@ -410,19 +434,19 @@
                                         <ul class="nav">
                                             <li class="nav-item">
                                                 <button type="button">
-                                                    <i class="icon-iconlike"></i>
+                                                    <span class="icon-like"></span>
                                                 </button>
                                                 <span>21</span>
                                             </li>
                                             <li class="nav-item">
                                                 <button type="button">
-                                                    <i class="icon-iconcomment"></i>
+                                                    <span class="icon-comment"></span>
                                                 </button>
                                                 <span>06</span>
                                             </li>
                                             <li class="nav-item">
                                                 <button type="button">
-                                                    <i class="icon-iconshare"></i>
+                                                    <span class="icon-share"></span>
                                                 </button>
                                                 <span>02</span>
                                             </li>
@@ -441,10 +465,13 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- POSTS SECTION END -->
                     </div>
                 </div>
+                <!-- MIDDLE CONTENT END -->
 
-                <div class="col-lg-4 col-md-5">
+                <!-- RIGHT SIDE CONTENT START -->
+                <div class="col-lg-3 col-md-3">
                     <div class="right-content">
                         <div class="right-top">
                             <div class="card">
@@ -524,6 +551,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- RIGHT SIDE CONTENT END -->
             </div>
         </div>
     </main>
@@ -553,6 +581,7 @@
     </footer>
     <!-- FOOTER SECTION END -->
 
+    <!-- SCRIPTS -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>

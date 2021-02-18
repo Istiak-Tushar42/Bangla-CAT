@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <!-- HEADER SECTION START -->
     <header class="header">
         <div class="container">
             <div class="d-flex align-items-center justify-content-between responsive-menu">
@@ -23,6 +24,7 @@
                     <img src="assets/images/brand.svg" alt="">
                 </a>
 
+                <!-- HEADER MENU START -->
                 <ul class="nav align-items-center">
                     <li class="nav-item">
                         <a href="index.html" class="nav-link">
@@ -68,9 +70,9 @@
                             <img src="assets/images/user1.svg" alt="">
                         </a>
                     </li>
-                    <li class="nav-item logout">
+                    <li class="nav-item log">
                         <a href="login.html" class="nav-link">
-                            <i class="icon-iconlogout"></i>
+                            <span class="icon-log"></span>
                         </a>
                     </li>
                     <li class="nav-item d-lg-none d-block menu-icon">
@@ -79,13 +81,17 @@
                         </a>
                     </li>
                 </ul>
+                <!-- HEADER MENU END -->
             </div>
         </div>
     </header>
+    <!-- HEADER SECTION END -->
 
+    <!-- MAIN SECTION START -->
     <main class="main-section">
         <div class="container">
             <div class="row">
+                <!-- LEFT SECTION START -->
                 <div class="col-lg-3 d-none d-lg-block">
                     <aside class="sidebar">
                         <div class="sidebar-img">
@@ -122,7 +128,7 @@
                             <li class="nav-item">
                                 <a href="profile.html" class="nav-link">
                                     <div class="d-flex align-items-center">
-                                        <img src="assets/images/user3.svg" width="20" alt="">
+                                        <span class="icon-user1"></span>
                                         <span class="nav-text">Profile</span>
                                     </div>
                                 </a>
@@ -130,7 +136,7 @@
                             <li class="nav-item active">
                                 <a href="account.html" class="nav-link">
                                     <div class="d-flex align-items-center">
-                                        <img src="assets/images/user4.svg" width="20" alt="">
+                                        <span class="icon-user2"></span>
                                         <span class="nav-text">Account</span>
                                     </div>
                                 </a>
@@ -138,7 +144,7 @@
                             <li class="nav-item">
                                 <a href="change-password.html" class="nav-link">
                                     <div class="d-flex align-items-center">
-                                        <img src="assets/images/star.svg" width="20" alt="">
+                                        <span class="icon-star"></span>
                                         <span class="nav-text">Change Password</span>
                                     </div>
                                 </a>
@@ -146,7 +152,7 @@
                             <li class="nav-item">
                                 <a href="settings.html" class="nav-link">
                                     <div class="d-flex align-items-center">
-                                        <img src="assets/images/settings.svg" width="20" alt="">
+                                        <span class="icon-settings"></span>
                                         <span class="nav-text">Settings</span>
                                     </div>
                                 </a>
@@ -154,7 +160,7 @@
                             <li class="nav-item">
                                 <a href="login.html" class="nav-link">
                                     <div class="d-flex align-items-center">
-                                        <img src="assets/images/logout.svg" width="20" alt="">
+                                        <span class="icon-logout"></span>
                                         <span class="nav-text">Logout</span>
                                     </div>
                                 </a>
@@ -162,48 +168,55 @@
                         </ul>
                     </aside>
                 </div>
+                <!-- LEFT SECTION END -->
 
+                <!-- MOBILE MENU START -->
                 <div class="mobile-menu d-lg-none">
                     <aside class="sidebar">
-                        <div class="sidebar-img">
-                            <img src="assets/images/user1.svg" alt="">
-                            <a href="#" class="edit-btn">
-                                <i class="fas fa-edit"></i>
-                            </a>
+                        <!-- TOP MENU START -->
+                        <div>
+                            <div class="sidebar-img">
+                                <img src="assets/images/user1.svg" alt="">
+                                <a href="#" class="edit-btn">
+                                    <span class="fas fa-edit"></span>
+                                </a>
+                            </div>
+
+                            <button class="close-icon">
+                                <i class="fas fa-times"></i>
+                            </button>
+
+                            <h6 class="sidebar-title">Profile Name</h6>
+
+                            <ul class="top-nav">
+                                <li>Current location - City, Country</li>
+                                <li>Current Designation</li>
+                                <li>Current Information
+                                    <ul class="nav">
+                                        <li>
+                                            <a href="mailto:sample@example.com">
+                                                sample@example.com
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="tel:+8801234567890">
+                                                +88 01234 567890
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Professional Experience</li>
+                                <li>Education</li>
+                            </ul>
                         </div>
+                        <!-- TOP MENU END -->
 
-                        <button class="close-icon">
-                            <i class="fas fa-times"></i>
-                        </button>
-
-                        <h6 class="sidebar-title">Profile Name</h6>
-
-                        <ul class="top-nav">
-                            <li>Current location - City, Country</li>
-                            <li>Current Designation</li>
-                            <li>Current Information
-                                <ul class="nav">
-                                    <li>
-                                        <a href="mailto:sample@example.com">
-                                            sample@example.com
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="tel:+8801234567890">
-                                            +88 01234 567890
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>Professional Experience</li>
-                            <li>Education</li>
-                        </ul>
-
+                        <!-- BOTTOM MENU START -->
                         <ul class="nav flex-column">
                             <li class="nav-item">
                                 <a href="profile.html" class="nav-link">
                                     <div class="d-flex align-items-center">
-                                        <img src="assets/images/user3.svg" width="20" alt="">
+                                        <span class="icon-user1"></span>
                                         <span class="nav-text">Profile</span>
                                     </div>
                                 </a>
@@ -211,7 +224,7 @@
                             <li class="nav-item active">
                                 <a href="account.html" class="nav-link">
                                     <div class="d-flex align-items-center">
-                                        <img src="assets/images/user4.svg" width="20" alt="">
+                                        <span class="icon-user2"></span>
                                         <span class="nav-text">Account</span>
                                     </div>
                                 </a>
@@ -219,7 +232,7 @@
                             <li class="nav-item">
                                 <a href="change-password.html" class="nav-link">
                                     <div class="d-flex align-items-center">
-                                        <img src="assets/images/star.svg" width="20" alt="">
+                                        <span class="icon-star"></span>
                                         <span class="nav-text">Change Password</span>
                                     </div>
                                 </a>
@@ -227,7 +240,7 @@
                             <li class="nav-item">
                                 <a href="settings.html" class="nav-link">
                                     <div class="d-flex align-items-center">
-                                        <img src="assets/images/settings.svg" width="20" alt="">
+                                        <span class="icon-settings"></span>
                                         <span class="nav-text">Settings</span>
                                     </div>
                                 </a>
@@ -235,22 +248,26 @@
                             <li class="nav-item">
                                 <a href="login.html" class="nav-link">
                                     <div class="d-flex align-items-center">
-                                        <img src="assets/images/logout.svg" width="20" alt="">
+                                        <span class="icon-logout"></span>
                                         <span class="nav-text">Logout</span>
                                     </div>
                                 </a>
                             </li>
                         </ul>
+                        <!-- BOTTOM MENU END -->
                     </aside>
                 </div>
+                <!-- MOBILE MENU END -->
 
-                <div class="col-lg-5 col-md-7">
+                <!-- MIDDLE SECTION START -->
+                <div class="col-lg-6 col-md-6">
                     <div class="content-middle">
                         <h3 class="d-flex align-items-center account-title">
                             <img src="assets/images/user4.svg" width="30" alt="">
                             <span class="nav-text">Account</span>
                         </h3>
 
+                        <!-- PROFILE FORM START -->
                         <form class="profile-form">
                             <div class="form-group mb-3">
                                 <label for="username" class="mb-2">Username <span>*</span></label>
@@ -305,11 +322,15 @@
                                 <button class="change-btn" type="submit">Save Changes</button>
                             </div>
                         </form>
+                        <!-- PROFILE FORM END -->
                     </div>
                 </div>
+                <!-- MIDDLE SECTION END -->
 
-                <div class="col-lg-4 col-md-5">
+                <!-- RIGHT SECTION START -->
+                <div class="col-lg-3 col-md-3">
                     <div class="right-content">
+                        <!-- RIGHT TOP SECTION -->
                         <div class="right-top">
                             <div class="card">
                                 <div class="card-body">
@@ -344,7 +365,9 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- RIGHT TOP SECTION -->
 
+                        <!-- RIGHT BOTTOM SECTION -->
                         <div class="right-bottom">
                             <div class="card">
                                 <div class="card-img">
@@ -386,12 +409,16 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- RIGHT BOTTOM SECTION -->
                     </div>
                 </div>
+                <!-- RIGHT SECTION END -->
             </div>
         </div>
     </main>
+    <!-- MAIN SECTION END -->
 
+    <!-- FOOTER SECTION START -->
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -413,7 +440,9 @@
             </div>
         </div>
     </footer>
+    <!-- FOOTER SECTION END -->
 
+    <!-- SCRIPTS -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>

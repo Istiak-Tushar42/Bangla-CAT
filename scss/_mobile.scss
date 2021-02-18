@@ -2,8 +2,8 @@
     .header {
         .responsive-menu {
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            // align-items: center;
+            // justify-content: center;
 
             .brand {
                 margin: .5rem 0 .5rem;
@@ -11,10 +11,17 @@
             }
 
             .nav {
+                width: 100%;
+                justify-content: space-between;
+
                 .nav-item {
                     .nav-link {
                         i {
-                            font-size: 1rem;
+                            font-size: 1.2rem;
+                        }
+
+                        span {
+                            font-size: 1.2rem;
                         }
                     }
                 }
@@ -135,7 +142,7 @@
     }
 
     .main {
-        min-height: 160vh;
+        min-height: 173vh;
 
         .login-details {
             .alumni-img {
@@ -205,6 +212,10 @@
             }
         }
 
+        .register-txt {
+            font-size: 12px;
+        }
+
         .welcome {
             .welcome-title {
                 font-size: 1.75rem;
@@ -217,6 +228,14 @@
                     font-size: 18px;
                 }
             }
+        }
+    }
+
+    .main-sec {
+        min-height: 100vh;
+
+        .alumni-img img {
+            margin-bottom: 1.75rem;
         }
     }
 
@@ -236,8 +255,6 @@
     .comment-btn {
         font-size: 12px;
     }
-
-
 }
 
 .mobile-menu {
@@ -255,6 +272,9 @@
         margin-left: -13px;
         overflow-y: scroll;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         .top-nav {
             margin-bottom: 1rem;

@@ -1,4 +1,5 @@
 @import 'reset';
+@import 'font';
 
 /** VARIABLES */
 $black: #000000;
@@ -31,7 +32,7 @@ $primary-color: #fcb415;
     font-family: $primary-font;
     border-bottom: solid .5rem $primary-color;
 
-    span {
+    .alu-text {
         font-family: $secondary-font;
         font-weight: 600;
         font-size: 26px;
@@ -53,18 +54,37 @@ $primary-color: #fcb415;
                 i {
                     font-size: 25px;
                 }
+
+                span {
+                    transition: all .5s;
+                }
+
+                .icon-log {
+                    font-size: 25px;
+                }
+
+                img {
+                    width: 35px;
+                    height: 35px;
+                    margin-left: .5rem;
+                }
             }
 
             &:hover {
                 .nav-link {
                     color: $primary-color;
+
+                    span {
+                        color: $primary-color;
+                    }
                 }
             }
         }
 
-        .nav-item.logout {
+        .nav-item.log {
             .nav-link {
-                transform: rotate(90deg);
+                font-size: 25px;
+                color: white;
             }
         }
 
@@ -183,6 +203,16 @@ $primary-color: #fcb415;
                 color: #818181;
                 text-decoration: none;
             }
+
+            .input-group {
+                .input-group-text {
+
+                    span,
+                    i {
+                        font-size: 1rem;
+                    }
+                }
+            }
         }
     }
 
@@ -241,6 +271,32 @@ $primary-color: #fcb415;
                 &:hover {
                     text-decoration: none;
                 }
+            }
+        }
+
+        .input-group {
+            .input-group-text {
+
+                span,
+                i {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .register-txt {
+        font-family: $secondary-font;
+        font-weight: 500;
+        font-size: 20px;
+        color: #ddd;
+
+        a {
+            text-decoration: none;
+            color: $primary-color;
+
+            &:hover {
+                text-decoration: underline;
             }
         }
     }
@@ -424,23 +480,27 @@ $primary-color: #fcb415;
                     transition: all .5s ease-in-out;
 
                     .nav-text {
-                        margin-left: 1rem;
+                        margin-left: .5rem;
+                    }
+
+                    .icon-user1,
+                    .icon-user2,
+                    .icon-star,
+                    .icon-settings,
+                    .icon-logout {
+                        font-size: 1.1rem;
                     }
 
                     &:hover {
-                        color: $black;
+                        color: $primary-color
                     }
                 }
             }
 
             .nav-item.active {
                 .nav-link {
-                    color: $black;
+                    color: $primary-color;
                     font-weight: bold;
-
-                    i {
-                        color: $black;
-                    }
                 }
             }
         }
@@ -448,7 +508,8 @@ $primary-color: #fcb415;
 
     .content-middle {
         background: #F2F2F2;
-        // height: 100%;
+        min-height: 100%;
+        background: white;
 
         .post-form {
             background: #F2F2F2;
@@ -473,7 +534,7 @@ $primary-color: #fcb415;
                         transition: all .5s ease-in-out;
 
                         &:hover {
-                            color: $black;
+                            color: $primary-color;
                         }
                     }
                 }
@@ -515,6 +576,8 @@ $primary-color: #fcb415;
                 }
 
                 .card-body {
+                    margin-top: -1.5rem;
+
                     .card-text {
                         font-weight: 300;
                         font-size: 14px;
@@ -546,7 +609,19 @@ $primary-color: #fcb415;
                                 border: none;
                                 outline: none;
                                 margin-right: .4rem;
-                                font-size: 1.2rem;
+                                display: flex;
+                                align-items: center;
+
+                                span {
+                                    font-size: 16px;
+                                    transition: all .5s ease-in-out;
+                                }
+
+                                &:hover {
+                                    span {
+                                        color: $primary-color;
+                                    }
+                                }
                             }
 
                             span {
@@ -564,6 +639,11 @@ $primary-color: #fcb415;
                         border: none;
                         color: $black;
                         font-size: 14px;
+                        transition: all .5s ease-in-out;
+
+                        &:hover {
+                            color: $primary-color;
+                        }
                     }
                 }
 
@@ -1031,7 +1111,7 @@ $primary-color: #fcb415;
         min-height: 100%;
 
         .right-top {
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
 
             .card {
                 border: none;
@@ -1147,5 +1227,5 @@ $primary-color: #fcb415;
     }
 }
 
-@import 'font';
+
 @import 'mobile';
