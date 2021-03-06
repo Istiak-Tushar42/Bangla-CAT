@@ -1,10 +1,6 @@
 @media(max-width: 768px) {
     .header {
         .responsive-menu {
-            flex-direction: column;
-            // align-items: center;
-            // justify-content: center;
-
             .brand {
                 margin: .5rem 0 .5rem;
                 display: block;
@@ -12,10 +8,13 @@
 
             .nav {
                 width: 100%;
-                justify-content: space-between;
+                justify-content: flex-end;
+                align-items: center;
 
                 .nav-item {
                     .nav-link {
+                        padding-left: 0;
+
                         i {
                             font-size: 1.2rem;
                         }
@@ -23,12 +22,18 @@
                         span {
                             font-size: 1.2rem;
                         }
+
+                        img {
+                            width: 25px;
+                            height: 25px;
+                        }
                     }
                 }
 
                 .dropdown {
                     .dropdown-menu {
-                        margin-top: 5px !important;
+                        margin-top: 18px !important;
+                        margin-left: -1rem !important;
 
                         .dropdown-item {
                             font-size: 12px;
@@ -47,10 +52,20 @@
         span {
             font-size: 12px;
         }
+
+        .alu-text {
+            font-size: 13px;
+        }
     }
 
     .main-section {
         .content-middle {
+
+            .account-title {
+                justify-content: center;
+                padding-top: 1rem;
+            }
+
             .profile-form {
                 min-height: 100%;
             }
@@ -142,13 +157,10 @@
     }
 
     .main {
-        min-height: 173vh;
 
         .login-details {
-            .alumni-img {
-                width: 70px;
-                height: 70px;
-            }
+            margin: 100px 0 0;
+            padding: 0;
 
             .alumni-title {
                 font-size: 1.75rem;
@@ -167,9 +179,8 @@
 
         .alumni-img {
             img {
-                width: 70px;
-                height: 70px;
-                margin: 2rem auto 0;
+                width: 100px;
+                height: 100px;
             }
         }
 
@@ -229,14 +240,47 @@
                 }
             }
         }
+
+
+    }
+
+    .reg-main {
+        min-height: 180vh;
+
+        .form-header {
+            display: flex;
+            align-items: center;
+            color: white;
+            margin: 2rem 0 -1rem;
+
+            &-left {
+                margin-right: 1rem;
+
+                &-img {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+        }
     }
 
     .main-sec {
         min-height: 100vh;
 
-        .alumni-img img {
-            margin-bottom: 1.75rem;
+        .alumni {
+            padding: 1.5rem 0;
+
         }
+
+        .alumni-img img {
+            margin-top: -150%;
+        }
+
+        .alumni-title {
+            margin-top: -2.5rem;
+        }
+
+
     }
 
     .welcome-main {
@@ -348,4 +392,13 @@
 
 .mobile-menu.show {
     left: 0;
+}
+
+.footer {
+    .left-side {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: .5rem;
+    }
 }

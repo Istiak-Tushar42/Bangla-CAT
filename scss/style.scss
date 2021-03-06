@@ -8,6 +8,7 @@ $primary-font: 'Univers';
 $secondary-font: 'Univers-Light-Normal';
 $primary-color: #fcb415;
 
+/** FONT FAMILY */
 @font-face {
     font-family: 'Univers-Light-Normal';
     src: url('../fonts/Univers-Light-Normal.woff2') format('woff2'),
@@ -26,6 +27,7 @@ $primary-color: #fcb415;
     font-display: swap;
 }
 
+/** HEADER SECTION START */
 .header {
     background: $black;
     padding: .5rem 0;
@@ -112,9 +114,13 @@ $primary-color: #fcb415;
     }
 }
 
+/** HEADER SECTION END*/
+
+/** MAIN SECTION START */
 .main {
     background: url(../images/background.svg) no-repeat center center/cover;
-    height: 100vh;
+    // height: 100vh;
+    min-height: 100vh;
     position: relative;
 
     .overlay {
@@ -195,14 +201,35 @@ $primary-color: #fcb415;
                 }
             }
 
-            .privacy-link {
-                font-family: $secondary-font;
-                font-weight: 500;
-                font-size: 15px;
-                text-align: left;
-                color: #818181;
-                text-decoration: none;
+            .privacy-list {
+                list-style: none;
+
+                li {
+                    // margin-right: 1rem;
+
+                    .privacy-link {
+                        font-family: $secondary-font;
+                        font-weight: 500;
+                        font-size: 15px;
+                        text-align: left;
+                        color: #818181;
+                        text-decoration: none;
+                        transition: all .5s ease-in-out;
+
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+
+                    span {
+                        color: #818181;
+                        margin: 0 .25rem;
+                        font-size: 1rem;
+                    }
+                }
             }
+
+
 
             .input-group {
                 .input-group-text {
@@ -510,6 +537,11 @@ $primary-color: #fcb415;
         background: #F2F2F2;
         min-height: 100%;
         background: white;
+
+        .account-title {
+            padding-top: 1rem;
+            margin-left: -.5rem;
+        }
 
         .post-form {
             background: #F2F2F2;
@@ -1199,6 +1231,10 @@ $primary-color: #fcb415;
     }
 }
 
+/** MAIN SECTION END */
+
+
+/** FOOTER SECTION START */
 .footer {
     background: $black;
     padding: 14px;
@@ -1227,5 +1263,9 @@ $primary-color: #fcb415;
     }
 }
 
+/** FOOTER SECTION END*/
 
+
+/** RESPONSIVE DESIGN START HERE */
 @import 'mobile';
+/** RESPONSIVE DESIGN END HERE */
